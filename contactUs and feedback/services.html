@@ -1,0 +1,186 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="/general style and js/footer.css" />
+    <link rel="stylesheet" href="/general style and js/navbar.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="header">
+      <a href="/home_about/home.html">
+        <div class="logo">
+          <img src="/Logo-removebg-preview.png" id="img" alt="Logo" />
+        </div>
+      </a>
+
+      <div class="hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <nav class="nav-bar">
+        <ul class="nav-list">
+          <li><a href="/home_about/home.html">Home</a></li>
+          <li><a href="/home_about/about.html">About Us</a></li>
+          <li><a href="/home_about/home.html/#partners">Our Partners</a></li>
+          <li id="services" class="auth-only">
+            <a href="/contactUs and feedback/services.html">Services</a>
+          </li>
+          <li id="contactus">
+            <a href="/contactUs and feedback/contact.html">Contact Us</a>
+          </li>
+          <li id="login"><a href="/login_signup/login.html">Login</a></li>
+          <li id="signup"><a href="/login_signup/signup.html">Signup</a></li>
+          <li id="feedback">
+            <a href="/contactUs and feedback/feedback.html">Feedback</a>
+          </li>
+        </ul>
+        <ul class="auth-only">
+          <li id="profile">
+            <a href="/profile_policy/profile.html">Profile</a>
+          </li>
+          <li id="logout">
+            <a id="logoutRes" class="logout" href="/home_about/home.html"
+              >Logout</a
+            >
+          </li>
+        </ul>
+        <div id="profileMenu" class="profile-menu">
+          <div class="profile-name">
+            <span id="profileName">User</span>
+            <i class="fa-regular fa-user" id="icon"></i>
+          </div>
+          <ul class="dropdown">
+            <li><a href="/profile_policy/profile.html">Profile</a></li>
+            <li>
+              <a href="/home_about/home.html" class="logout" id="logoutNotRes"
+                >Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Main content -->
+    <section>
+      <div class="ser">
+        <h2>Our Services</h2>
+      </div>
+
+      <div class="card-container">
+        <div class="card" data-url="/contactUs and feedback/feedback.html">
+          <img
+            src="wd-applet-connect-dashboard-512.png"
+            alt="Feedback System"
+          />
+          <div class="container">Feedback System</div>
+        </div>
+        <div class="card" data-url="/task_leave/leaves.html">
+          <img
+            src="wd-applet-employee-on-leave-512.png"
+            alt="Leave Application"
+          />
+          <div class="container">Leave Application</div>
+        </div>
+        <div class="card" data-url="/task_leave/tasks.html">
+          <img src="wd-applet-my-projects-512.png" alt="Task Management" />
+          <div class="container">Task Management</div>
+        </div>
+        <div class="card" data-url="/profile_policy/policy.html">
+          <img src="wd-applet-basics-512.png" alt="Company Policies" />
+          <div class="container">Company Policies</div>
+        </div>
+        <div class="card" data-url="/task_leave/informations.html">
+          <img
+            src="wd-applet-direct-reports-512.png"
+            alt="Employees Information"
+          />
+          <div class="container">Employees Information</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer_container">
+        <div class="footer_grid">
+          <div class="footer_logo">
+            <img src="/Logo-removebg-preview.png" alt="" />
+          </div>
+
+          <div class="pages">
+            <h2 class="list_title">Pages</h2>
+            <a href="#home">Home</a>
+            <a href="#partners">Our Partners</a>
+            <a href="#services">Services</a>
+            <a href="#aboutUs">About Us</a>
+            <a href="#contactUs">Contact Us</a>
+          </div>
+
+          <div class="info">
+            <h2 class="list_title">Info</h2>
+            <p>
+              Email: <a href="mailto:Example@gmail.com"> Example@gmail.com</a>
+            </p>
+
+            <p>Phone: <a href="tel:009627*********"> +9627**********</a></p>
+
+            <p>
+              Address:<a
+                href="https://maps.app.goo.gl/zQqZPFxcDaGF4P887"
+                target="_blank"
+              >
+                6 Sheikh K ste,<br />Irbid, Orange Digital <br />Village</a
+              >
+            </p>
+          </div>
+
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13452.038915311185!2d35.8496688!3d32.5525856!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c7715f2c2e7ab%3A0x51755840c8ddbefd!2sOrange%20Digital%20Village%20Irbid!5e0!3m2!1sar!2sjo!4v1716222013922!5m2!1sar!2sjo"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrery="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="copy">
+          <p id="copy">
+            Copyright &copy; 2024 Example Company. All rights reserved.
+          </p>
+        </div>
+
+        <div class="footer_plateform">
+          <a href="linkedin.com/in/Example" target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="mailto:Example@gmail.com"><i class="bx bxl-gmail"></i></a>
+          <a href="tel:009627911111111"><i class="bx bx-phone"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="services.js"></script>
+    <script src="/general style and js/navbar.js"></script>
+  </body>
+</html>

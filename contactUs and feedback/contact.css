@@ -1,0 +1,237 @@
+/* HEADER */
+.background-image-container {
+  background-image: url("contactFirst.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.headerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  color: aliceblue;
+  position: absolute;
+  margin-left: 50px;
+  font-size: 100px;
+  margin-top: 0;
+}
+.header2 {
+  margin-top: 200px;
+  color: aliceblue;
+  margin-left: 40px;
+  font-size: 40px;
+}
+.highlight {
+  background-color: rgb(206, 206, 156);
+  transition: background-color 0.3s ease;
+  animation: blinker 5s ease infinite;
+}
+.Container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.form-group {
+  text-align: center;
+}
+.feedback-form-container {
+  width: 60%;
+  color: rgb(39, 39, 117);
+  padding: 30px;
+  background-color: #eceff2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-left: 0;
+  font-size: 20px;
+}
+.row {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.form-control {
+  font-size: 1rem;
+  line-height: 1.5;
+  display: block;
+  padding: 5px;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #8898aa;
+  border: 1px solid #cad1d7;
+  border-radius: 0.375rem;
+  background-color: #fff;
+  background-clip: padding-box;
+  box-shadow: none;
+  text-align: center;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  .form-control {
+    transition: none;
+  }
+}
+.form-control::-ms-expand {
+  border: 0;
+  background-color: transparent;
+}
+.form-control:focus {
+  color: #8898aa;
+  border-color: rgba(50, 151, 211, 0.25);
+  outline: 0;
+  background-color: #fff;
+  box-shadow: none, none;
+}
+
+.form-control::placeholder {
+  opacity: 1;
+  font-family: "Times New Roman", Times, serif;
+  color: #adb5bd;
+}
+.form-control:disabled,
+.form-control[readonly] {
+  opacity: 1;
+  background-color: #e9ecef;
+}
+textarea.form-control {
+  height: auto;
+  margin: 0 auto;
+}
+textarea {
+  width: 90%;
+  resize: vertical;
+}
+#Low {
+  color: green;
+}
+#Middle {
+  color: #f39c12;
+}
+#High {
+  color: red;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.overlay-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  border: 1px transparent;
+  border-radius: 0.375rem;
+  font-size: 15px;
+  background-color: #adb5bd;
+  position: relative;
+  transition: all 0.15s ease;
+  letter-spacing: 0.025em;
+  text-transform: none;
+  color: #1a174d;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+.btn:hover {
+  transform: translateY(-1px);
+  color: #8898aa;
+  background-color: #32325d;
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.4), 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+.form-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contactOptions {
+  width: 25%;
+  padding: 10px;
+}
+.contact-item {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  margin-top: 29px;
+  margin-left: 100px;
+  justify-content: center;
+}
+.contactImage {
+  transition: transform 0.3s ease;
+}
+.contactImage:hover img {
+  transform: rotate(10deg);
+}
+.contact-item a {
+  color: rgb(56, 73, 109); /* Set text color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.contact-item a .icon {
+  font-size: 32px; /* Icon size */
+  margin-right: 10px;
+}
+
+.contact-item a:hover {
+  color: #007bff; /* Change color on hover */
+}
+.lastPhoto {
+  width: 300px;
+  height: 300px;
+  margin-left: 50px;
+}
+.line {
+  border-left: 1px solid rgb(93, 96, 93);
+  height: 500px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 40px;
+  box-shadow: 0 0 10px rgba(56, 73, 109, 0.6);
+}
+
+/* Responsive View */
+@media only screen and (max-width: 426px) {
+  .headerContainer {
+    font-size: 70px;
+    margin-left: 20px;
+  }
+  .header2 {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .feedback-form-container {
+    width: 100%;
+  }
+  .lastPhoto {
+    width: 210px;
+    margin-left: 5px;
+  }
+  .contactImage {
+    margin-left: 0px;
+  }
+  .line {
+    display: none; /* Hide vertical line on small screens */
+  }
+  .contactOptions {
+    margin-left: 90px;
+  }
+}

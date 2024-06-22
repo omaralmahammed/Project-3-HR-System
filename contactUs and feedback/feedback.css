@@ -1,0 +1,168 @@
+/** @format */
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+body {
+  background-color: #f8f9fa;
+  font-family: Open Sans, sans-serif;
+  color: #525f7f;
+  background-color: #f8f9fe;
+  font-size: 20px;
+}
+
+/* -----------------Complaints Table Design -----------------*/
+#complaintsTable th,
+#complaintsTable td {
+  border: 1px solid rgb(36, 36, 84);
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px;
+}
+.table thead {
+  background-color: #343a40;
+  color: white;
+}
+.table-hover tbody tr:hover {
+  background-color: #9ca6b2;
+}
+#complaintsTable {
+  font-size: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+#complaintsTableBody {
+  max-height: 400px;
+  overflow-y: auto;
+}
+#complaintsTableBody select {
+  text-align: center;
+  text-align-last: center;
+}
+#complaintsTableBody button,
+#complaintsTableBody a {
+  text-align: center;
+}
+#complaintsTableBody .feedback-content {
+  text-align: center;
+  margin: auto;
+}
+.table-responsive {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+/* -----------------container -----------------*/
+.container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  font-family: "Times New Roman", Times, serif;
+  overflow-x: auto;
+  width: 500px;
+  height: fit-content;
+  margin-bottom: 25px;
+}
+/* -------------filter ---------------------- */
+#filterColumn,
+#filterInput {
+  max-width: 400px;
+}
+/* -------------------- Counter Section ---------------------*/
+
+.counter {
+  width: 100%;
+  height: 40vh;
+  margin-top: 50px;
+  background-color: rgb(36, 36, 84);
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  flex-wrap: wrap;
+  font-size: 20px;
+  position: relative;
+  justify-content: space-around;
+}
+.counter1,
+.counter2,
+.counter3 {
+  margin-top: 3%;
+  background-color: #9ca6b2;
+  width: 20%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  color: #f8f9fa;
+  font-size: 30px;
+  border-radius: 10px;
+}
+.counting {
+  background-color: rgb(36, 36, 84);
+}
+.status-counter {
+  color: aliceblue;
+  border-radius: 20px;
+  padding: 20px;
+}
+/* -----------------download & clear filter -----------------*/
+
+#clearFilterButton,
+#download-btn {
+  background-color: rgb(185, 198, 198);
+  color: rgb(36, 36, 84);
+  border: 1px solid transparent;
+  height: 50px;
+  margin-top: 20px;
+}
+#download-btn:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#clearFilterButton:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.content {
+  height: 100px;
+  overflow-y: hidden;
+}
+
+/*-------------------- Responsive Design --------------------- */
+
+@media (max-width: 426px) {
+  .container {
+    padding: 10px;
+    overflow-x: hidden;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .table {
+    font-size: 15px;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .table th,
+  .table td {
+    min-width: 100px;
+    padding: 8px;
+  }
+
+  .counter {
+    margin-left: 65px;
+  }
+}

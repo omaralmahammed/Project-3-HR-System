@@ -1,0 +1,262 @@
+/**
+ * Template Name: HR2 - Template
+ * Version: 1.0
+ * Author: HostingRed SAS
+ * Author URL: http://hostingred.com
+ *
+ * @format
+ */
+
+/*******************************************
+USE THIS FILE TO INCLUDE YOUR OWN CSS STYLES
+********************************************/
+.about-section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.card h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.card .icon {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#paragraphAbout {
+  font-size: 18px;
+}
+#paragraphCards {
+  font-size: 16px;
+}
+#paragraphStatistic {
+  font-size: 18px;
+}
+#paragraphSevice {
+  font-size: 18px;
+}
+#paragraphTeam {
+  font-size: 18px;
+}
+.iconColor {
+  color: #fff;
+}
+.team-member {
+  max-height: 280px !important;
+  width: auto;
+  overflow: hidden;
+}
+
+.team-member .team-img {
+  /* max-height: 200px !important; */
+  overflow: hidden;
+}
+
+.team-member .team-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.team-member .team-info,
+.team-member p {
+  /* max-height: calc(100% - 200px) !important; */
+  overflow: hidden;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 300px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  overflow: hidden; /* Hide overflow content */
+}
+
+.card h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons li {
+  margin: 0 5px;
+}
+
+.social-icons a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #333;
+  line-height: 30px;
+}
+
+.social-icons a i {
+  color: #fff;
+  font-size: 16px;
+}
+
+@media (max-width: 426px) {
+  .card {
+    flex: 1 1 100%; /* Full width on smaller screens */
+    max-width: calc(100% - 20px); /* Adjust for gap */
+  }
+}
+
+.section-header {
+  margin-bottom: 50px;
+}
+.section-header .section-title {
+  font-size: 44px;
+  color: #272727;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 0 20px;
+  padding-top: 40px;
+}
+.section-header .section-title:before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -70px;
+  height: 1px;
+  background: #ebebeb;
+}
+.section-header .section-title:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: -11px;
+  left: 50%;
+  margin-left: -12px;
+  border: 5px solid #fff;
+  border-radius: 20px;
+  background: rgb(36, 36, 84);
+}
+
+.memberCard {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.memberCard .col-sm-6 {
+  flex: 1 0 100%; /* Each column takes up full width on smaller screens */
+  max-width: calc(100% / 2 - 20px); /* Two cards per row on medium screens */
+}
+
+.memberCard .col-md-3 {
+  flex: 1 0 100%; /* Each column takes up full width on larger screens */
+  max-width: calc(100% / 5 - 20px); /* Four cards per row on larger screens */
+}
+
+.employeeInfo {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  height: 100%; /* Ensure all cards are the same height */
+}
+
+.employeeInfo .team-member {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.employeeInfo .team-info {
+  margin-bottom: 10px;
+}
+
+.employeeInfo h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.employeeInfo p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.employeeInfo .social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.employeeInfo .social-icons li {
+  margin: 0 5px;
+}
+
+.employeeInfo .social-icons a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #333;
+  line-height: 30px;
+}
+
+.employeeInfo .social-icons a i {
+  color: #fff;
+  font-size: 16px;
+}
+
+#HR {
+  display: none;
+}

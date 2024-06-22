@@ -1,0 +1,184 @@
+/** @format */
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(0 0 50 / 48%), rgb(0 0 50 / 45%)),
+    url("459-background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#confirmpassword {
+  margin-bottom: 30px;
+}
+.signup-form {
+  width: 600px;
+  background: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  color: #525f7f;
+  border-radius: 15px;
+  padding: 30px 40px;
+}
+
+.signup-form h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.signup-form .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 15px 0;
+}
+
+.input-box input {
+  width: 97%;
+  height: 60%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid #cad1d7;
+  border-radius: 0.375rem;
+  font-size: 13px;
+  color: #525f7f;
+  padding: 20px 18px 20px 20px;
+  margin-left: 12px;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.btn-info {
+  color: #fff;
+  border-color: #11cdef;
+  background-color: #11cdef;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.input-box input::placeholder {
+  color: #525f7f;
+}
+
+.input-box i {
+  position: absolute;
+  right: 22px;
+  top: 45%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+.signup-form .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.signup-form .btn {
+  margin-top: 29px;
+  margin-left: 181px;
+  width: 30%;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.signup-form .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link p a {
+  color: #525f7f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+/* هون تعديلات الفلكس  */
+
+.flex1 {
+  display: flex;
+}
+
+.flex1 {
+  flex: 1;
+  margin-right: 5px;
+  margin-top: 25px;
+}
+
+.flex1:last-child {
+  margin-right: 0;
+}
+
+.flex2 {
+  display: flex;
+}
+
+.flex2 {
+  flex: 1;
+  margin-right: 5px;
+}
+
+.flex2:last-child {
+  margin-right: 0;
+}
+
+.input-box .error {
+  color: #ff3860;
+  font-size: 13px;
+  height: 9px;
+  margin-left: 18px;
+}
+.input-box.success input {
+  border-color: #09c372;
+}
+
+@media screen and (max-width: 480px) {
+  .signup-form {
+    width: 298px;
+    margin-top: 77px;
+    margin-bottom: 77px;
+  }
+  .flex1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flex2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .signup-form .btn {
+    margin-top: 29px;
+    margin-left: 66px;
+    width: 41%;
+  }
+  .signup-form .input-box {
+    margin: 10px 0;
+  }
+  .input-box .error {
+    font-size: 11px;
+    height: 9px;
+    margin-left: 18px;
+  }
+}

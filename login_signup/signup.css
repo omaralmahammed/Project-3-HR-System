@@ -61,12 +61,20 @@
 
 .btn-info {
   color: #fff;
-  border-color: #11cdef;
-  background-color: #11cdef;
+  border-color: rgb(185, 198, 198);
+  background-color: rgb(36, 36, 84);
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
-.input-box input::placeholder {
-  color: #525f7f;
+.btn-info:hover {
+  color: #fff;
+  border-color: rgb(185, 198, 198);
+  background-color: rgba(36, 36, 84, 0.927);
+}
+
+.btn-info:not(:disabled):not(.disabled):active {
+  color: #fff;
+  border-color: rgb(185, 198, 198);
+  background-color: rgb(36, 36, 84);
 }
 
 .input-box i {

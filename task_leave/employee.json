@@ -13,9 +13,9 @@
     "salary": 75000,
     "imgSrc": "https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg",
     "socialLinks": {
-      "facebook": "#",
-      "twitter": "#",
-      "linkedin": "#"
+      "facebook": "https://www.facebook.com/?locale=ar_AR",
+      "twitter": "https://x.com/i/flow/login",
+      "linkedin": "https://www.linkedin.com/company/login/"
     }
   },
   {
@@ -189,5 +189,4 @@
       "linkedin": "#"
     }
   }
-
 ]

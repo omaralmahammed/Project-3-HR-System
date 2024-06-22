@@ -123,6 +123,6 @@ formData.addEventListener("submit", function (event) {
     localStorage.setItem("regestersData", JSON.stringify(regestersData));
 
     // Go to Home page
-    window.location.href = "/home_about/home.html";
+    window.location.href = "/login_signup/login.html";
   }
 });
